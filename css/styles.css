@@ -67,8 +67,7 @@ img {
     text-decoration: none;
     color: #000;
 }
-.logo.footer{
-    margin-top: 60px;
+.logo.secondary{
     margin-bottom: 20px;
 }
 .logo .text{
@@ -143,17 +142,12 @@ img {
 /* Hero */
 .hero{  
     max-width: 1600px;
-    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 0, 0, 0.4), 
-        rgba(0, 48, 0, 0.4), 
-        rgba(0, 0, 58, 0.4)),
-        url(../images/hero.jpg);
-    background-color: #C4C4C4;
+    text-align: center;    
+    background-color:  #2F303A;  
 }
 .hero-title{
     max-width: 696px;
@@ -164,7 +158,7 @@ img {
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
+    text-transform: uppercase;  
     color: #FFFFFF;
 }
 /* Sections */
@@ -183,15 +177,6 @@ img {
 }
 .feature-list .item{
     width: 270px;
-}
-.feature-list .item::before{
-    display: block;
-    content: "";
-    height: 120px;
-    border-radius: 4px;
-    background-image: url(../images/antenna.png);
-    background-position: center;
-    background-repeat: no-repeat;
 }
 .feature-list .item:not(:last-child){
     margin-right: 30px;
@@ -228,7 +213,9 @@ img {
 }
 
 /* Our team */
-
+.section.team{
+    background-color: #F5F4FA;
+}
 .team-title{
     margin-bottom: 50px;
     font-size: 36px;
@@ -244,9 +231,11 @@ img {
 .team-list .item:not(:last-child){
     margin-right: 30px;
 }
-
+.team-box{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .team-list .title{
-    margin-top: 30px;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -255,7 +244,6 @@ img {
     letter-spacing: 0.03em;
 }
 .team-list .text{
-    margin-bottom: 30px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
@@ -263,8 +251,17 @@ img {
 }
 /* Footer */
 .footer{
-   background-color: #2F303A;
+    max-width: 1600px;
+    padding-bottom: 60px;
+    padding-top: 60px;   
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2F303A;
 }
+/* .container.footer{
+    padding-top: 0;
+    padding-bottom: 0;
+} */
 .address{
     font-style: normal;
     font-size: 14px;
@@ -272,11 +269,8 @@ img {
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
-.address .text{
+.address .text:not(:last-child){
     margin-bottom: 9px;
-}
-.address-list{
-    padding-bottom: 60px;
 }
 .address-list .link{
     text-decoration: none;
@@ -286,7 +280,7 @@ img {
 .button{
     display: inline-block;
     border-radius: 4px;
-    border: 4px solid transparent;
+    border: none;
     padding: 6px 22px;
     height: 38px;
     font-family: inherit;    
@@ -300,6 +294,7 @@ img {
 .button-hero{
     display: inline-block;
     border-radius: 4px;
+    border: none;
     padding: 10px 32px;
     min-width: 200px;
     height: 50px;
@@ -341,6 +336,10 @@ img {
     justify-content: center;
     margin-top: 0;
     margin-bottom: 34px;
+    padding-left: 0;
+}
+.button-list .item:not(:last-child){
+    margin-right: 8px;
 }
 .project-list{
     display: flex;
@@ -358,10 +357,14 @@ img {
     margin-bottom: 0;
 }
 .project-border{
-    border: 1px solid transparent;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-top: none;
+    border: 1px solid #EEEEEE;
 }
 .project-list .title{
-    margin-top: 20px;
     margin-bottom: 4px;
     font-size: 18px;
     line-height: 2;
@@ -369,7 +372,6 @@ img {
     color: var(--primary-text-color);
 }
 .project-list .text{
-    margin-bottom: 20px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
