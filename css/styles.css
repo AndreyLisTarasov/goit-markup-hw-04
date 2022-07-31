@@ -116,24 +116,6 @@ img {
     align-items: center;
     margin-left: auto;
 }
-.link.mail::before{ 
-    content: "";
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    background-image: url(../images/envelope.svg);
-    background-repeat: no-repeat;  
-    background-position: center;
-}
-.link.telefon::before{ 
-    content: "";
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    background-image: url(../images/smartphone.svg);
-    background-repeat: no-repeat;  
-    background-position: center;
-}
 .auth-nav .item:not(:last-child){
     margin-right: 50px;
 }
@@ -203,7 +185,11 @@ img {
 .feature-list .item{
     width: 270px;
 }
-.feature-list .item::before{
+.button-icon{
+    width: 70px;
+    height: 70px;
+}
+/* .feature-list .item::before{
     display: block;
     content: "";
     height: 120px;
@@ -226,7 +212,7 @@ img {
 }
 .feature-list .item:not(:last-child){
     margin-right: 30px;
-}
+} */
 .feature-list .title{
     margin-bottom: 10px;
     font-size: 14px;
