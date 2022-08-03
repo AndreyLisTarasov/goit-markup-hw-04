@@ -21,6 +21,7 @@ body{
 
 ul{
     margin: 0;
+    padding: 0;
     list-style: none;
 }
 img {
@@ -140,9 +141,9 @@ img {
 .address-list .link:focus{
     color: var(--main-link-color);
 } 
-.auth-nav .link.current{
+/* .auth-nav .link.current{
     color: var(--main-link-color);
-}
+} */
 /* Hero */
 .hero{  
     max-width: 1600px;
@@ -189,7 +190,6 @@ img {
     width: 270px;
 }
 .feature-list .icon{
-    width: 270px;
     height: 120px;
     margin-bottom: 30px;
     background-color: #F5F4FA;
@@ -276,7 +276,6 @@ img {
 }
 .team-box{
     padding-top: 30px;
-    padding-bottom: 16px;
 }
 .team-list .title{
     margin-bottom: 10px;
@@ -290,28 +289,57 @@ img {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 16px;
     color: var(--secondary-text-color);
 }
 .socnetwork{
     display: flex;
     justify-content: center;
-    width: 206px;
-    height: 44px;
+    gap: 10px;
     padding-bottom: 30px;
 
 }
 .socnetwork-link{
     display: flex;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    width: 44px;
-    height: 44px;
-    background-color: teal;
-
+    fill: #AFB1B8;
 }
-.socnetwork-item:not(:last-child){
-    margin-right: 10px;
+.socnetwork-link:focus,
+.socnetwork-link:hover{
+    background-color: #2196F3;
+    fill: #FFFFFF;
+}
+/* Clients */
+.clients-title{
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;    
+}
+.clients-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.clients-link{    
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    fill: #AFB1B8;
+}
+.clients-link:hover,
+.clients-link:focus{
+    border: 1px solid #2196F3;
+    fill: #2196F3;
 }
 /* Footer */
 .footer{
@@ -322,10 +350,6 @@ img {
     margin-right: auto;
     background-color: #2F303A;
 }
-/* .container.footer{
-    padding-top: 0;
-    padding-bottom: 0;
-} */
 .address{
     font-style: normal;
     font-size: 14px;
