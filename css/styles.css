@@ -124,7 +124,7 @@ img {
     margin-right: 10px;
 }
 .auth-nav .link{
-    display: inline-flex;
+    display: flex;
     align-items: center;
     margin-top: 32px;
     margin-bottom: 32px;
@@ -141,9 +141,9 @@ img {
 .address-list .link:focus{
     color: var(--main-link-color);
 } 
-/* .auth-nav .link.current{
-    color: var(--main-link-color);
-} */
+.auth.icon{
+    fill: currentColor;
+}
 /* Hero */
 .hero{  
     max-width: 1600px;
@@ -390,6 +390,7 @@ img {
 }
 
 .join-title{
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -497,8 +498,12 @@ img {
     margin-right: 30px; 
     margin-bottom: 30px;
 }
-.project-list .item:focus,
-.project-list .item:hover{
+.project-list .link{
+    display: block;
+    text-decoration: none;
+}
+.project-list .link:focus,
+.project-list .link:hover{
     box-shadow: 
     0px 1px 1px rgba(0, 0, 0, 0.12), 
     0px 4px 4px rgba(0, 0, 0, 0.06), 
