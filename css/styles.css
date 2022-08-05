@@ -350,6 +350,14 @@ img {
     margin-right: auto;
     background-color: #2F303A;
 }
+.footer-container{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .address{
     font-style: normal;
     font-size: 14px;
@@ -363,6 +371,28 @@ img {
 .address-list .link{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
+}
+.join-title{
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;    
+    color: #FFFFFF;    
+}
+.join-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.join-link{
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    fill: #AFB1B8;
 }
 /* Button */
 .button{
