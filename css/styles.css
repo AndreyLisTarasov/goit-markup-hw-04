@@ -90,6 +90,7 @@ img {
     margin-right: 50px;
 }
 .site-nav .link{
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
@@ -119,10 +120,10 @@ img {
     margin-right: 10px;
 }
 .auth-nav .link{
-    display: flex;
+    display: block;
     align-items: center;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -147,12 +148,11 @@ img {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 0, 0, 0.4), 
-        rgba(0, 48, 0, 0.4), 
-        rgba(0, 0, 58, 0.4)),
-        url(../images/hero.jpg);
+    background-image:
+    linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
     background-color: #C4C4C4;
 }
 .hero-title{
@@ -179,20 +179,19 @@ img {
 .feature-list{
     display: flex;
     padding-left: 0;
+    gap: 30px;
 }
 .feature-list .item{
     width: 270px;
 }
 .feature-list .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 120px;
     margin-bottom: 30px;
     background-color: #F5F4FA;
-}
-.button-icon{
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 100px;
-    margin-right: 100px;
+    border-radius: 4px;
 }
 /* .feature-list .item::before{
     display: block;
@@ -270,8 +269,10 @@ img {
 }
 .team-box{
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 .team-list .item{
+    background-color: #FFFFFF;
     box-shadow: 
     0px 1px 3px rgba(0, 0, 0, 0.12), 
     0px 1px 1px rgba(0, 0, 0, 0.14), 
@@ -297,7 +298,6 @@ img {
     display: flex;
     justify-content: center;
     gap: 10px;
-    padding-bottom: 30px;
 }
 .socnetwork-link{
     display: flex;
@@ -345,13 +345,14 @@ img {
 .footer{
     max-width: 1600px;
     padding-bottom: 60px;
-    /* padding-top: 60px;    */
+    padding-top: 60px;   
     margin-left: auto;
     margin-right: auto;
     background-color: #2F303A;
 }
 .footer-container{
     display: flex;
+    align-items: baseline;
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
@@ -359,7 +360,6 @@ img {
     padding-right: 15px;
 }
 .footer-address{
-    padding-top: 60px;
     margin-right: 70px;
 }
 .address{
@@ -376,9 +376,8 @@ img {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
 }
-.join{
-    padding-top: 72px;
-}
+.join{}
+
 .join-title{
     font-weight: 700;
     font-size: 14px;
